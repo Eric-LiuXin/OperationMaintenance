@@ -15,7 +15,9 @@ function InstallIIS{
                                      /FeatureName:IIS-IIS6ManagementCompatibility `
                                      /FeatureName:IIS-ManagementConsole `
                                      /FeatureName:IIS-ManagementScriptingTools `
-                                     /FeatureName:IIS-ManagementService
+                                     /FeatureName:IIS-ManagementService `
+                                     /FeatureName:IIS-Metabase `
+                                     /FeatureName:IIS-LegacySnapIn
 
         #Enable World Wide Web Services
         dism /Online /Enable-Feature /FeatureName:IIS-WebServer `
